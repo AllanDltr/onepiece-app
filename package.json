@@ -2,6 +2,7 @@
   "name": "onepiece-app",
   "version": "0.0.0",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -43,6 +44,10 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.8.2"
+    "typescript": "~5.8.2",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
+    "yargs": "16.2.0"
   }
 }

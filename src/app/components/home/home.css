@@ -2,7 +2,7 @@
   min-height: 100vh;
   padding: 2rem;
   color: white;
-  background-image: url('/assets/background.jpg') !important;
+  background-image: url("/background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,15 +11,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   position: relative;
 }
 
 .home-container::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
@@ -54,7 +57,8 @@
 
 /* Animation : zoom + léger mouvement vertical */
 @keyframes floatZoom {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1) translateY(0);
   }
   50% {

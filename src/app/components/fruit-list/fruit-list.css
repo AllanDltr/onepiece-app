@@ -1,0 +1,73 @@
+.fruits {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  background-color: #fffaf0;
+}
+
+.fruit-card {
+  background: #fff6e5;
+  border: 3px solid #f95738;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 2px 2px 8px rgba(249, 87, 56, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fruit-card:hover,
+.fruit-card:focus {
+  transform: scale(1.05);
+  border-color: #ee964b;
+  outline: none;
+}
+
+.fruit-card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 2px solid #f95738;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.fruit-card h2 {
+  margin: 0.5rem 0 0 0;
+  color: #f95738;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.fruit-card p {
+  margin: 0.3rem 0 0.8rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.fruit-card a {
+  color: #f95738;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.fruit-card a:hover {
+  color: #ee964b;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .fruits {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .fruit-card {
+    padding: 0.8rem;
+  }
+}
